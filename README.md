@@ -27,6 +27,7 @@ from arc9 import ARC9
 decoder = ARC9("your-secret-password")
 
 packet = "!A7Z98@2#..." # Use the packet from the example above
+
 decrypted = decoder.process(packet, decrypt=True)
 
 print(f"Decrypted text: {decrypted}")
